@@ -4,7 +4,7 @@ The simulation has two steps:
 
 Step 1. Creation of an input file for the simulation. For this we use the 'ThetaGenerator.py' code as following:
 
-$>>$ python ThetaGenerator.py R T L b
+$ python ThetaGenerator.py R T L b
 
 where, 
 
@@ -33,7 +33,7 @@ Line 6: ub (upper bound on the total number of infected.)
 
 Step 2. Use the outputfile generated in the first step as input for the simulation code 'Simulate.py':
 
-$>>$ python Simulate.py simulatedip.csv alpha beta gamma
+$ python Simulate.py simulatedip.csv alpha beta gamma
 
 Output file:
 
