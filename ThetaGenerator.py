@@ -23,17 +23,6 @@ for i in range(0, R):
        x = random.randint(0,200)
     Seed.append(x)
 
-#fp = open('vacc.csv', 'r')
-#lines = fp.readlines()
-
-#V = []
-#for i in range(0,R):
-#    l = lines[i].strip("\n").split(",")
-#    V.append([]) 
-    #x = random.randint(0,500)
-#    for t in range(0,T):
-#        V[i].append(l[t])
-
 theta = []
 for i in range(0,R):
     theta.append([])
@@ -65,7 +54,6 @@ for i in range(0,R):
     else:
        fp.write(val+",")
 fp.write("\n")
-fp.write("0.2,0.1,0.3\n")
 
 for i in range(0,R):
     val = str(Seed[i])
@@ -74,17 +62,6 @@ for i in range(0,R):
     else:
       fp.write(val+",")
 fp.write("\n")
-
-
-
-#for i in range(0,R):
-#    for t in range(0,T):
-#        val = str(V[i][t])
-#        if(i == R-1 and t == R-1):
-#           fp.write(val)
-#        else:
-#           fp.write(val+",")
-#fp.write("\n")
 
 
 for i in range(0,R):
@@ -96,6 +73,7 @@ for i in range(0,R):
            fp.write(val+",")
 fp.write("\n")
 
+#Budget values for each region: can be automated
 for i in range(0,T):
     if(i == T-1):
       fp.write("1000")
@@ -104,11 +82,4 @@ for i in range(0,T):
 fp.write("\n")
 fp.write("5000000\n")
 
-
-#fp.write("\n")       
-#fp.write("10000\n")
-#fp.write("8000\n")  
-#fp.write("50000000\n")
-#fp.write("0.3,0.3,0.5\n")
-#fp.write("1500")
 
