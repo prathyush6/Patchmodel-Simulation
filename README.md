@@ -36,6 +36,7 @@ Step 2. Use the outputfile generated in the first step as input for the simulati
 >> python Simulate.py simulatedip.csv
 
 Output file:
+
 Line 1: I[0][0], ..., I[0][T-1]
 
 Line 2: I[[1][0], ..., I[1][T-1]
