@@ -33,7 +33,7 @@ Line 6: ub (upper bound on the total number of infected.)
 
 Step 2. Use the outputfile generated in the first step as input for the simulation code 'Simulate.py':
 
->> python Simulate.py simulatedip.csv
+>> python Simulate.py simulatedip.csv alpha beta gamma
 
 Output file:
 
