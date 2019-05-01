@@ -51,6 +51,6 @@ Line 2: I[[1][0], ..., I[1][T-1]
 
 .
 
-Line R-1: I[R-1][0], ..., I[R-1][T-1]
+Line R: I[R-1][0], ..., I[R-1][T-1]
 
 These are the simulated values generated for number of infected in each region for all time steps.
