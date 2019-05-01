@@ -35,6 +35,10 @@ Step 2. Use the outputfile generated in the first step as input for the simulati
 
 $ python Simulate.py simulatedip.csv alpha beta gamma
 
+where,
+
+alpha, beta, gamma are the disease parameters.
+
 Output file:
 
 Line 1: I[0][0], ..., I[0][T-1]
