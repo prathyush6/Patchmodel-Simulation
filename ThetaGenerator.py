@@ -11,11 +11,14 @@ print(R,T)
 
 
 N = []
+#population of each county randomly assigned a value in range [100000, 1000000]
 for i in range(0, R):
-    x = random.randint(3000,4000)
+    x = random.randint(100000,1000000)
     N.append(x)
 
 Seed = []
+#each county is randomly picked with probability 0.1 to have seed infected. if picked a random
+#value is assigned to the county as seed infected
 for i in range(0, R):
     x = 0
     toss = random.randint(0,2)
