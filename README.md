@@ -31,7 +31,15 @@ Line 5: B[0], ..., B[T-1]  (Budget B[t] at time t.)
 
 Line 6: ub (upper bound on the total number of infected.)
 
-Step 2. Use the outputfile generated in the first step as input for the simulation code 'Simulate.py':
+Step 2. Use the outputfile generated in the first step as input for the vaccination code 'vaccination.py':
+
+$ python vaccination.py simulatedip.csv alpha beta gamma
+
+where,
+
+alpha, beta, gamma are the disease parameters.
+
+Step 3 (optional). Use the outputfile generated in the first step as input for the simulation code 'Simulate.py':
 
 $ python Simulate.py simulatedip.csv alpha beta gamma
 
