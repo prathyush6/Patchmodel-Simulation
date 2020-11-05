@@ -4,7 +4,7 @@ R = []
 T = []
 N = []
 
-fr = open('sim_output.txt','w')
+fr = open('infected.csv','w')
 
 
 #set up all input data from the file (simulatedip.csv)
@@ -31,13 +31,13 @@ with open(sys.argv[1]) as fp:
         N.append(int(l2[i]))
         k = k+1
 
-    l3 = lines[2].strip("\n").split(",")
+    #l3 = lines[2].strip("\n").split(",")
     alpha = float(sys.argv[2])
     beta = float(sys.argv[3])
     gamma = float(sys.argv[4])
     print("alpha beta gamma "+str(alpha)+" "+str(beta)+" "+str(gamma))
 
-    l4 = lines[3].strip("\n").split(",")
+    l4 = lines[2].strip("\n").split(",")
     I = []
     for i in range(0, noRegions):
         I.append([])
@@ -46,7 +46,7 @@ with open(sys.argv[1]) as fp:
             I[i].append(0)
 
     theta = []
-    l6 = lines[4].strip("\n").split(",")
+    l6 = lines[3].strip("\n").split(",")
     k = 0
     for i in range(0, noRegions):
         theta.append([])
@@ -120,9 +120,9 @@ for i in range(0, noRegions):
 for i in range(0, noRegions):
     for t in range(0, timePeriods):
         if(t == timePeriods - 1):
-           fr.write(str(I[i][t])+"\n")
+           fr.write(str(int(I[i][t]))+"\n")
         else:
-           fr.write(str(I[i][t])+",")
+           fr.write(str(int(I[i][t]))+",")
 
 fr.close()
 print("Simulation Ends")
